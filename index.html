@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GioroX AI, Inc. — WAP3 Agentic Payment & Provenance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="GioroX AI, Inc. builds WAP3 — a Web3-based agentic payment and provenance protocol that lets AI agents escrow funds, verify work, and settle tasks autonomously."
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-50">
+  <div class="pointer-events-none fixed inset-0 bg-gradient-to-b from-sky-900/40 via-slate-950 to-black"></div>
+
+  <div class="relative mx-auto flex min-h-screen max-w-5xl flex-col px-4 py-8 md:px-8 md:py-12">
+    <!-- Header -->
+    <header class="mb-10 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="flex h-9 w-9 items-center justify-center rounded-2xl bg-sky-500/20 ring-1 ring-sky-400/60">
+          <span class="text-lg font-semibold text-sky-200">GX</span>
+        </div>
+        <div>
+          <div class="text-sm font-semibold tracking-wide text-sky-100">
+            GioroX AI, Inc.
+          </div>
+          <div class="text-xs text-slate-400">
+            WAP3 · Agentic payment & provenance
+          </div>
+        </div>
+      </div>
+
+      <nav class="hidden items-center gap-6 text-xs font-medium text-slate-300 md:flex">
+        <a href="#features" class="hover:text-sky-200">Protocol</a>
+        <a href="#flows" class="hover:text-sky-200">Agent flows</a>
+        <a href="#built-on" class="hover:text-sky-200">Chains</a>
+        <a href="https://github.com/nelsonjingusc" target="_blank" rel="noreferrer" class="hover:text-sky-200">
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/nanjing/" target="_blank" rel="noreferrer" class="hover:text-sky-200">
+          LinkedIn
+        </a>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="flex flex-1 flex-col gap-12 md:flex-row md:gap-10">
+      <!-- Left: copy -->
+      <section class="md:w-3/5 space-y-6">
+        <p class="inline-flex items-center gap-2 rounded-full bg-sky-500/10 px-3 py-1 text-xs font-medium text-sky-200 ring-1 ring-sky-500/40">
+          <span class="inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+          WAP3 — Web3-based Agentic Payment & Provenance
+        </p>
+
+        <h1 class="text-3xl font-semibold leading-tight tracking-tight text-slate-50 md:text-4xl">
+          A programmable <span class="text-sky-300">settlement layer</span>
+          for autonomous <span class="text-emerald-300">AI agents</span>.
+        </h1>
+
+        <p class="text-sm leading-relaxed text-slate-300 md:text-base">
+          GioroX AI, Inc. builds WAP3, an escrow-based, agent-native payment and provenance protocol.
+          AI agents can lock funds, verify outputs across multiple models, attach immutable proofs,
+          and settle on-chain — without humans micromanaging every step.
+        </p>
+
+        <ul class="space-y-2 text-sm text-slate-200">
+          <li class="flex gap-2">
+            <span class="mt-1 h-1.5 w-1.5 rounded-full bg-sky-400"></span>
+            Intent → execution → verification → settlement as a single programmable primitive.
+          </li>
+          <li class="flex gap-2">
+            <span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+            Cryptographic receipts for every task, evaluation, and payment event.
+          </li>
+          <li class="flex gap-2">
+            <span class="mt-1 h-1.5 w-1.5 rounded-full bg-violet-400"></span>
+            Neutral protocol that can be deployed on Sui, ICP, Base, or other L1s.
+          </li>
+        </ul>
+
+        <div class="flex flex-wrap gap-3 pt-2">
+          <a
+            href="https://github.com/nelsonjingusc/wap3-agent-payment-poc"
+            target="_blank"
+            rel="noreferrer"
+            class="inline-flex items-center justify-center rounded-full bg-sky-500 px-4 py-2 text-sm font-medium text-slate-950 shadow-lg shadow-sky-500/40 hover:bg-sky-400"
+          >
+            View WAP3 prototype
+          </a>
+
+          <a
+            href="mailto:nelsonjing@gioroxai.com"
+            class="inline-flex items-center justify-center rounded-full border border-slate-600 px-4 py-2 text-sm font-medium text-slate-100 hover:border-sky-400 hover:text-sky-100"
+          >
+            Discuss integration →
+          </a>
+        </div>
+
+        <div class="pt-4 text-xs text-slate-400 md:text-[0.7rem]">
+          GioroX AI, Inc. is founded by Nelson Jing (USC CS PhD, ex-Bloomberg, Element, Provenance AI),
+          focused on programmable settlement primitives for AI-native and Web3-native systems.
+        </div>
+      </section>
+
+      <!-- Right: visual cards -->
+      <section class="md:w-2/5 space-y-4">
+        <!-- Agent flow card -->
+        <div id="flows" class="rounded-2xl bg-slate-900/70 p-4 ring-1 ring-slate-700/70 backdrop-blur">
+          <div class="mb-3 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">
+              Agent execution flow
+            </span>
+            <span class="rounded-full bg-slate-800 px-2 py-0.5 text-[0.65rem] text-slate-300">
+              pseudo-code
+            </span>
+          </div>
+
+          <pre class="overflow-x-auto rounded-xl bg-slate-950/80 p-3 text-[0.7rem] leading-relaxed text-slate-200">
+agent.intent("write+evaluate+ship")
+  .lock_funds(50, "USDC")
+  .route_to("WAP3@GioroX")
+  .fanout(tasks=["draft","review","compliance"])
+  .collect_proofs("walrus://…")
+  .settle_onchain(chain="Sui")</pre>
+
+          <p class="mt-3 text-[0.7rem] leading-relaxed text-slate-300">
+            WAP3 acts as a neutral coordinator: escrow first, orchestrate work across agents
+            and models, then settle with verifiable receipts.
+          </p>
+        </div>
+
+        <!-- Feature grid -->
+        <div id="features" class="grid grid-cols-1 gap-3 text-xs text-slate-100 sm:grid-cols-2">
+          <div class="rounded-2xl bg-sky-500/10 p-3 ring-1 ring-sky-500/40">
+            <div class="mb-1 text-[0.75rem] font-semibold text-sky-100">
+              Programmable escrow
+            </div>
+            <p class="text-[0.7rem] text-sky-50/80">
+              Milestones, slashing, streaming unlocks, and holdbacks
+              exposed as first-class agent APIs.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-emerald-500/10 p-3 ring-1 ring-emerald-500/40">
+            <div class="mb-1 text-[0.75rem] font-semibold text-emerald-100">
+              Verifiable provenance
+            </div>
+            <p class="text-[0.7rem] text-emerald-50/80">
+              Every run emits a signed receipt: inputs, models, hashes,
+              and proof locations on verifiable storage.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-violet-500/10 p-3 ring-1 ring-violet-500/40">
+            <div class="mb-1 text-[0.75rem] font-semibold text-violet-100">
+              Agent-native interfaces
+            </div>
+            <p class="text-[0.7rem] text-violet-50/80">
+              Clean JSON and gRPC surfaces that plug into AP2, LangGraph,
+              and custom agent frameworks without heavy coupling.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-slate-800/90 p-3 ring-1 ring-slate-600/80">
+            <div class="mb-1 text-[0.75rem] font-semibold text-slate-50">
+              Open protocol, not a SaaS
+            </div>
+            <p class="text-[0.7rem] text-slate-200/80">
+              Designed to be implemented on multiple L1s as a neutral standard
+              for AI agent payments and task settlement.
+            </p>
+          </div>
+        </div>
+
+        <!-- Chains / experiments -->
+        <div id="built-on" class="rounded-2xl bg-slate-900/80 p-3 ring-1 ring-slate-700">
+          <div class="text-[0.7rem] font-semibold uppercase tracking-wide text-slate-400">
+            Early experiments
+          </div>
+          <div class="mt-2 flex flex-wrap gap-2 text-[0.7rem] text-slate-100">
+            <span class="rounded-full bg-slate-800 px-2 py-1">Sui + Walrus</span>
+            <span class="rounded-full bg-slate-800 px-2 py-1">ICP canisters</span>
+            <span class="rounded-full bg-slate-800 px-2 py-1">Base / L2</span>
+            <span class="rounded-full bg-slate-800 px-2 py-1">AP2 / X-402 intents</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-10 border-t border-slate-800 pt-4 text-[0.7rem] text-slate-500">
+      <div class="flex flex-col justify-between gap-3 md:flex-row md:items-center">
+        <div>© <span id="year"></span> GioroX AI, Inc. All rights reserved.</div>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://github.com/nelsonjingusc" target="_blank" rel="noreferrer" class="hover:text-sky-300">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/nanjing/" target="_blank" rel="noreferrer" class="hover:text-sky-300">
+            LinkedIn
+          </a>
+          <a href="mailto:nelsonjing@gioroxai.com" class="hover:text-sky-300">
+            Contact
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
