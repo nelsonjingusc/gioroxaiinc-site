@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="PredictorIQ is an agentic analytics platform for prediction markets, built on WAP3 for programmable escrow and automatic settlement between system agents and user agents."
+    content="PredictorIQ is an analytics and decision-support product for prediction markets, helping traders understand whether prices make sense, how capital is positioned, and where cross-venue discrepancies appear."
   />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -75,17 +75,21 @@
           Agent-powered analytics and decision support for prediction markets
         </p>
 
-        <p class="text-gray-600 max-w-3xl">
-          PredictorIQ helps traders answer five practical questions: is the price justified, who is on each side, is behavior statistically unusual, how does pricing differ across venues, and what action is defensible right now.
+        <p class="text-gray-600 max-w-3xl mt-4">
+          PredictorIQ is a standalone analytics and decision-support product for prediction markets. It helps traders answer a few practical questions: whether a price makes sense, how capital is positioned on each side, whether behavior looks unusual, how pricing differs across venues, and what action is defensible right now.
         </p>
 
         <p class="text-gray-700 max-w-3xl mt-4">
-          Built on <span class="font-semibold text-blue-700">WAP3</span> — our programmable escrow and automatic settlement layer — enabling system agents and user agents to exchange analysis, signals, and workflows with auditable execution.
+          Within GioroX AI, PredictorIQ can optionally integrate with shared infrastructure components such as <span class="font-semibold text-blue-700">WAP3</span>, our programmable escrow and settlement layer for agent-to-agent workflows. This integration is not required for the core analytics experience in v0.2 and is only used in advanced or experimental workflows where verifiable exchange of analysis is useful.
+        </p>
+
+        <p class="text-gray-600 max-w-3xl mt-2 text-sm">
+          In v0.2, Arbitrum is the first onchain home for PredictorIQ access control, usage tracking, and early user traction.
         </p>
 
         <div class="mt-6 max-w-3xl rounded-lg bg-blue-50 p-5 ring-2 ring-blue-100 border border-blue-200">
           <p class="text-sm text-gray-800 leading-relaxed">
-            <span class="font-semibold text-blue-900">Agent-powered intelligence layer:</span> PredictorIQ deploys specialized <span class="font-medium text-blue-700">system agents</span> that continuously scan prediction markets across venues to identify trading opportunities and anomalies. Each user operates a <span class="font-medium text-blue-700">user agent</span> that can purchase analysis bundles from system agents via WAP3's escrow mechanism. User agents validate signals using integrated LLM verification before committing to transactions. Over time, the system tracks <span class="font-medium text-orange-700">capability scores</span> for system agents (signal quality and reliability) and <span class="font-medium text-orange-700">credit profiles</span> for user agents (transaction behavior), creating a self-improving marketplace for prediction market intelligence.
+            <span class="font-semibold text-blue-900">Agent-powered intelligence layer:</span> PredictorIQ deploys specialized <span class="font-medium text-blue-700">system agents</span> that continuously scan prediction markets across venues to identify trading opportunities and anomalies. Each user operates a <span class="font-medium text-blue-700">user agent</span> that can request or purchase analysis bundles from system agents, optionally using WAP3-based escrow workflows where verifiable exchange is needed. User agents validate signals using integrated LLM verification before committing to transactions. Over time, the system tracks <span class="font-medium text-orange-700">capability scores</span> for system agents (signal quality and reliability) and <span class="font-medium text-orange-700">credit profiles</span> for user agents (transaction behavior), creating a self-improving marketplace for prediction market intelligence.
           </p>
         </div>
 
@@ -202,10 +206,10 @@
       <!-- WAP3 Relationship -->
       <section id="wap3" class="mb-16">
         <h2 class="text-2xl font-semibold mb-2 text-blue-900">
-          Built on WAP3: Agent-to-Agent Trading, Escrow, Settlement
+          Optional WAP3 Integration: Agent-to-Agent Trading, Escrow, Settlement
         </h2>
         <p class="text-gray-600 text-sm mb-6 max-w-3xl">
-          PredictorIQ is built on top of WAP3 — a programmable escrow and automatic settlement layer for AI agents. The goal is to make analytics and workflows tradable, verifiable, and fast enough to matter in live markets.
+          PredictorIQ can optionally integrate with WAP3 — a programmable escrow and automatic settlement layer for AI agents developed within GioroX AI. The goal of this integration is to make analytics and workflows tradable, verifiable, and fast enough to matter in live markets, but it is not required for the core v0.2 analytics product.
         </p>
 
         <div class="grid md:grid-cols-3 gap-6">
@@ -316,7 +320,7 @@
       <!-- Company Context -->
       <section class="border-t pt-8 text-sm text-gray-600">
         <p>
-          PredictorIQ is a product developed by GioroX AI. It is built on WAP3 — a programmable escrow and settlement layer — to enable agent-to-agent exchange of analysis and execution workflows across prediction markets.
+          PredictorIQ is a product developed by GioroX AI. It can optionally integrate with WAP3 — a programmable escrow and settlement layer — to enable agent-to-agent exchange of analysis and execution workflows across prediction markets, but the core analytics product works independently.
         </p>
       </section>
 
