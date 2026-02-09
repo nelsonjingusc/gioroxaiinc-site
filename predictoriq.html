@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>PredictorIQ | AI Analytics for Prediction Markets</title>
+  <title>PredictorIQ | Decision Intelligence for Prediction Markets</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="PredictorIQ is an analytics and decision-support product for prediction markets, helping traders understand whether prices make sense, how capital is positioned, and where cross-venue discrepancies appear."
+    content="PredictorIQ is a decision intelligence layer for prediction markets. We evaluate signal quality in noisy environments, helping you determine which price movements and capital flows are worth trusting."
   />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -38,16 +38,15 @@
             GioroX AI, Inc.
           </a>
           <div class="text-xs text-gray-600">
-            Agentic intelligence for prediction markets
+            Decision intelligence for high-signal environments
           </div>
         </div>
       </div>
 
       <nav class="hidden items-center gap-6 text-xs font-medium text-gray-700 md:flex">
         <a href="#what" class="hover:text-blue-600 transition-colors">What</a>
-        <a href="#wap3" class="hover:text-blue-600 transition-colors">WAP3</a>
-        <a href="#how" class="hover:text-blue-600 transition-colors">How</a>
         <a href="#who" class="hover:text-blue-600 transition-colors">Who</a>
+        <a href="#how" class="hover:text-blue-600 transition-colors">How</a>
         <a href="#why" class="hover:text-blue-600 transition-colors">Why</a>
         <a href="https://github.com/nelsonjingusc" target="_blank" rel="noreferrer" class="hover:text-blue-600 transition-colors">
           GitHub
@@ -64,7 +63,7 @@
       <section class="mb-16">
         <div class="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3 py-1 text-xs text-orange-700 ring-1 ring-orange-200">
           <span class="h-1.5 w-1.5 rounded-full bg-orange-500"></span>
-          v0.2 — designed for serious prediction market participants
+          Intelligence layer, not a trading bot
         </div>
 
         <h1 class="mt-5 text-4xl font-bold mb-4 text-blue-900">
@@ -72,120 +71,97 @@
         </h1>
 
         <p class="text-xl text-gray-800 mb-4 font-medium">
-          Agent-powered analytics and decision support for prediction markets
+          Evaluate signal quality in prediction markets
         </p>
 
-        <p class="text-gray-600 max-w-3xl mt-4">
-          PredictorIQ is a standalone analytics and decision-support product for prediction markets. It helps traders answer a few practical questions: whether a price makes sense, how capital is positioned on each side, whether behavior looks unusual, how pricing differs across venues, and what action is defensible right now.
+        <p class="text-gray-700 max-w-3xl mt-4 leading-relaxed">
+          PredictorIQ is a <span class="font-semibold text-blue-900">decision intelligence layer</span> built on prediction markets. We don't predict outcomes or automate trades. Instead, we evaluate whether price movements, capital flows, and structural changes are worth trusting in noisy, fast-moving environments.
         </p>
 
-        <p class="text-gray-700 max-w-3xl mt-4">
-          Within GioroX AI, PredictorIQ can optionally integrate with shared infrastructure components such as <span class="font-semibold text-blue-700">WAP3</span>, our programmable escrow and settlement layer for agent-to-agent workflows. This integration is not required for the core analytics experience in v0.2 and is only used in advanced or experimental workflows where verifiable exchange of analysis is useful.
+        <p class="text-gray-700 max-w-3xl mt-4 leading-relaxed">
+          Prediction markets compress time, information asymmetry, and economic feedback into a uniquely demanding environment, making them an ideal proving ground for signal evaluation and system robustness.
         </p>
 
-        <p class="text-gray-600 max-w-3xl mt-2 text-sm">
-          In v0.2, Arbitrum is the first onchain home for PredictorIQ access control, usage tracking, and early user traction.
-        </p>
-
-        <div class="mt-6 max-w-3xl rounded-lg bg-blue-50 p-5 ring-2 ring-blue-100 border border-blue-200">
-          <p class="text-sm text-gray-800 leading-relaxed">
-            <span class="font-semibold text-blue-900">Agent-powered intelligence layer:</span> PredictorIQ deploys specialized <span class="font-medium text-blue-700">system agents</span> that continuously scan prediction markets across venues to identify trading opportunities and anomalies. Each user operates a <span class="font-medium text-blue-700">user agent</span> that can request or purchase analysis bundles from system agents, optionally using WAP3-based escrow workflows where verifiable exchange is needed. User agents validate signals using integrated LLM verification before committing to transactions. Over time, the system tracks <span class="font-medium text-orange-700">capability scores</span> for system agents (signal quality and reliability) and <span class="font-medium text-orange-700">credit profiles</span> for user agents (transaction behavior), creating a self-improving marketplace for prediction market intelligence.
-          </p>
-        </div>
-
-        <div class="mt-6">
+        <div class="mt-8">
           <div class="flex flex-wrap gap-3">
             <a
               href="#contact"
               class="inline-block bg-orange-500 text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-orange-600 shadow-md hover:shadow-lg transition-all"
             >
-              Contact / Request Access
+              Request Access
             </a>
             <a
               href="#what"
               class="inline-block bg-white text-blue-700 px-6 py-3 rounded-md text-sm font-medium ring-2 ring-blue-600 hover:bg-blue-50 transition-all"
             >
-              See v0.2 Features
+              See How It Works
             </a>
           </div>
-          <p class="text-xs text-gray-500 mt-2">
-            Current stage: working prototype. Early access is opening to a small cohort of active traders and research users.
-          </p>
-          <p class="text-xs text-gray-500 mt-2">
-            Initial coverage focuses on Polymarket and Kalshi; additional venues include Opinion and Limitless Exchange (data support varies by venue).
+          <p class="text-xs text-gray-500 mt-3">
+            Current stage: working prototype with live market coverage (Polymarket, Kalshi, Opinion, Limitless Exchange).
           </p>
         </div>
       </section>
 
       <!-- What It Does -->
       <section id="what" class="mb-16">
-        <h2 class="text-2xl font-semibold mb-2 text-blue-900">
-          What PredictorIQ Does (v0.2)
+        <h2 class="text-2xl font-semibold mb-3 text-blue-900">
+          What PredictorIQ Does
         </h2>
-        <p class="text-gray-700 text-sm mb-6 max-w-3xl">
-          v0.2 is intentionally an "institutional-style" tool: it anchors pricing with real markets when possible, then adds wallet-level structure, anomaly context, and cross-venue comparison. It does not do subjective forecasting.
+        <p class="text-gray-700 text-sm mb-8 max-w-3xl leading-relaxed">
+          We evaluate signal quality through four core methods. These capabilities serve both individual investors (seeking mispricing insight) and institutional users (seeking early risk signals).
         </p>
 
         <div class="grid md:grid-cols-2 gap-6">
-          <div class="border-2 border-blue-100 rounded-lg p-5 bg-white hover:border-blue-300 transition-colors shadow-sm">
-            <div class="flex items-start justify-between gap-3">
-              <h3 class="font-semibold mb-2 text-blue-900">1) Option-Anchored Mispricing</h3>
-              <span class="text-xs rounded-full bg-orange-100 px-2 py-1 text-orange-700 ring-1 ring-orange-200 font-medium">Pricing anchor</span>
+          <div class="border-2 border-blue-100 rounded-lg p-6 bg-white hover:border-blue-300 transition-colors shadow-sm">
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <h3 class="font-semibold text-blue-900">Option-Anchored Mispricing Analysis</h3>
+              <span class="text-xs rounded-full bg-orange-100 px-2 py-1 text-orange-700 ring-1 ring-orange-200 font-medium shrink-0">Pricing anchor</span>
             </div>
-            <p class="text-gray-600 text-sm">
-              For price-based events (above/below, touch, range), estimate a risk-neutral fair probability using option-implied volatility and payoff mapping (digital/barrier/range), then compare it to the market-implied probability.
+            <p class="text-gray-700 text-sm leading-relaxed mb-3">
+              For markets with price-based payoffs, we map them to equivalent option structures and use Black–Scholes–style probability estimates tied to real option market implied volatility.
             </p>
-            <p class="text-xs text-gray-500 mt-3">
-              Output: fair probability, implied probability, mispricing %, and cheap/fair/expensive verdict.
+            <p class="text-gray-600 text-xs leading-relaxed">
+              This gives us an independent fair probability estimate to compare against the prediction market's implied probability, revealing potential mispricing without subjective forecasting.
             </p>
           </div>
 
-          <div class="border-2 border-blue-100 rounded-lg p-5 bg-white hover:border-blue-300 transition-colors shadow-sm">
-            <div class="flex items-start justify-between gap-3">
-              <h3 class="font-semibold mb-2 text-blue-900">2) Yes/No Capital Structure</h3>
-              <span class="text-xs rounded-full bg-orange-100 px-2 py-1 text-orange-700 ring-1 ring-orange-200 font-medium">Who is on each side</span>
+          <div class="border-2 border-blue-100 rounded-lg p-6 bg-white hover:border-blue-300 transition-colors shadow-sm">
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <h3 class="font-semibold text-blue-900">Wallet Behavior & History Analysis</h3>
+              <span class="text-xs rounded-full bg-orange-100 px-2 py-1 text-orange-700 ring-1 ring-orange-200 font-medium shrink-0">Capital quality</span>
             </div>
-            <p class="text-gray-600 text-sm">
-              Decompose each market by side: concentration (Top 1 / Top 10 / Top 1% / Top 10%), participant count, and wallet quality based on historical outcomes across prior markets.
+            <p class="text-gray-700 text-sm leading-relaxed mb-3">
+              We continuously track wallet behavior on both Yes and No sides, including historical performance, consistency, position changes, and entry/exit timing.
             </p>
-            <p class="text-xs text-gray-500 mt-3">
-              Output: side-by-side "capital quality" comparison, not just volume.
+            <p class="text-gray-600 text-xs leading-relaxed">
+              The goal isn't to label "smart money." Instead, we determine whether one side is primarily driven by historically more informative participants.
             </p>
           </div>
 
-          <div class="border-2 border-blue-100 rounded-lg p-5 bg-white hover:border-blue-300 transition-colors shadow-sm">
-            <div class="flex items-start justify-between gap-3">
-              <h3 class="font-semibold mb-2 text-blue-900">3) Statistical Anomaly Context</h3>
-              <span class="text-xs rounded-full bg-orange-100 px-2 py-1 text-orange-700 ring-1 ring-orange-200 font-medium">Not accusations</span>
+          <div class="border-2 border-blue-100 rounded-lg p-6 bg-white hover:border-blue-300 transition-colors shadow-sm">
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <h3 class="font-semibold text-blue-900">Anomaly & Outlier Detection</h3>
+              <span class="text-xs rounded-full bg-orange-100 px-2 py-1 text-orange-700 ring-1 ring-orange-200 font-medium shrink-0">Statistical signal</span>
             </div>
-            <p class="text-gray-600 text-sm">
-              Flag statistically unusual behavior (e.g., extreme position-size Z-scores, early favorable entries, new/low-history wallets, highly directional exposure). This is framed as contextual signal, not claims of wrongdoing.
+            <p class="text-gray-700 text-sm leading-relaxed mb-3">
+              Statistical methods identify wallets that deviate significantly from their own historical baseline or overall market behavior, including early positioning, unusual concentration, or coordinated activity.
             </p>
-            <p class="text-xs text-gray-500 mt-3">
-              Output: anomaly score, key contributing factors, and anomalous capital split by side.
+            <p class="text-gray-600 text-xs leading-relaxed">
+              These signals indicate potential information strength, not claims about motivation or insider knowledge.
             </p>
           </div>
 
-          <div class="border-2 border-blue-100 rounded-lg p-5 bg-white hover:border-blue-300 transition-colors shadow-sm">
-            <div class="flex items-start justify-between gap-3">
-              <h3 class="font-semibold mb-2 text-blue-900">4) Cross-Venue Price Comparison</h3>
-              <span class="text-xs rounded-full bg-orange-100 px-2 py-1 text-orange-700 ring-1 ring-orange-200 font-medium">Relative mispricing</span>
+          <div class="border-2 border-blue-100 rounded-lg p-6 bg-white hover:border-blue-300 transition-colors shadow-sm">
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <h3 class="font-semibold text-blue-900">Short-Horizon Evaluation (15-min)</h3>
+              <span class="text-xs rounded-full bg-orange-100 px-2 py-1 text-orange-700 ring-1 ring-orange-200 font-medium shrink-0">Rapid resolution</span>
             </div>
-            <p class="text-gray-600 text-sm">
-              Normalize economically equivalent events across venues and compare implied probabilities to highlight inconsistencies and potential arbitrage windows (subject to liquidity and settlement differences).
+            <p class="text-gray-700 text-sm leading-relaxed mb-3">
+              For very short-duration markets (e.g., Polymarket 15-minute contracts), we analyze late-window price dislocations, liquidity structure, and short-term mean reversion patterns.
             </p>
-            <p class="text-xs text-gray-500 mt-3">
-              Output: cross-market gaps, execution considerations, and venue-specific caveats.
-            </p>
-          </div>
-
-          <div class="border-2 border-blue-100 rounded-lg p-5 md:col-span-2 bg-white hover:border-blue-300 transition-colors shadow-sm">
-            <div class="flex items-start justify-between gap-3">
-              <h3 class="font-semibold mb-2 text-blue-900">5) Explainable Recommendations (Professional-grade)</h3>
-              <span class="text-xs rounded-full bg-orange-100 px-2 py-1 text-orange-700 ring-1 ring-orange-200 font-medium">Decision support</span>
-            </div>
-            <p class="text-gray-600 text-sm max-w-3xl">
-              Combine mispricing, capital structure, anomaly context, and liquidity into a defensible action: Buy Yes / Buy No / Avoid. Every output includes a short rationale identifying the dominant drivers (no black-box signals).
+            <p class="text-gray-600 text-xs leading-relaxed">
+              Transaction costs are explicitly incorporated. Opportunities surface only when post-fee expected value remains positive, distinguishing emotional mispricing from genuine information updates.
             </p>
           </div>
         </div>
@@ -203,124 +179,176 @@
         </p>
       </section>
 
-      <!-- WAP3 Relationship -->
-      <section id="wap3" class="mb-16">
-        <h2 class="text-2xl font-semibold mb-2 text-blue-900">
-          Optional WAP3 Integration: Agent-to-Agent Trading, Escrow, Settlement
+      <!-- Who It's For -->
+      <section id="who" class="mb-16">
+        <h2 class="text-2xl font-semibold mb-3 text-blue-900">
+          Who It's For
         </h2>
-        <p class="text-gray-600 text-sm mb-6 max-w-3xl">
-          PredictorIQ can optionally integrate with WAP3 — a programmable escrow and automatic settlement layer for AI agents developed within GioroX AI. The goal of this integration is to make analytics and workflows tradable, verifiable, and fast enough to matter in live markets, but it is not required for the core v0.2 analytics product.
+        <p class="text-gray-700 text-sm mb-6 max-w-3xl leading-relaxed">
+          PredictorIQ serves two distinct user groups with different objectives, but both rely on the same underlying signal evaluation methods.
         </p>
 
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="border-2 border-blue-100 rounded-lg p-5 bg-white hover:border-blue-300 transition-colors shadow-sm">
-            <h3 class="font-semibold mb-2 text-blue-900">System Agents</h3>
-            <p class="text-gray-600 text-sm">
-              Each core capability (mispricing scan, wallet quality, anomaly context, cross-venue gaps) is implemented as a specialized agent that continuously monitors markets and produces signed, attributable outputs.
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="border-2 border-blue-100 rounded-lg p-6 bg-white shadow-sm">
+            <h3 class="font-semibold text-blue-900 mb-3">Individual Investors</h3>
+            <p class="text-gray-700 text-sm mb-4 leading-relaxed">
+              <span class="font-medium">Core question:</span> Is this price movement noise, or does it reflect genuine informational edge or mispricing?
             </p>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li class="flex gap-2">
+                <span class="text-orange-600 font-bold shrink-0">•</span>
+                <span>Evaluate whether observed price changes are driven by noise, emotion, or historically informative behavior</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="text-orange-600 font-bold shrink-0">•</span>
+                <span>Identify potential mispricing through option-anchored fair value estimates</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="text-orange-600 font-bold shrink-0">•</span>
+                <span>Understand capital positioning and wallet quality on each side</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="text-orange-600 font-bold shrink-0">•</span>
+                <span>Assess short-horizon opportunities with explicit cost analysis</span>
+              </li>
+            </ul>
           </div>
 
-          <div class="border-2 border-blue-100 rounded-lg p-5 bg-white hover:border-blue-300 transition-colors shadow-sm">
-            <h3 class="font-semibold mb-2 text-blue-900">User Agents</h3>
-            <p class="text-gray-600 text-sm">
-              Each user can have a personal agent that requests signals, runs fast checks in a playground environment, and decides whether to purchase a specific analysis bundle or action plan.
+          <div class="border-2 border-blue-100 rounded-lg p-6 bg-white shadow-sm">
+            <h3 class="font-semibold text-blue-900 mb-3">Institutional Users</h3>
+            <p class="text-gray-700 text-sm mb-4 leading-relaxed">
+              <span class="font-medium">Core objective:</span> Early risk signaling, not trade execution.
             </p>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li class="flex gap-2">
+                <span class="text-orange-600 font-bold shrink-0">•</span>
+                <span>Track probability structure changes across clustered, related markets</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="text-orange-600 font-bold shrink-0">•</span>
+                <span>Monitor capital concentration, reallocation patterns, and behavioral shifts</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="text-orange-600 font-bold shrink-0">•</span>
+                <span>Detect potential risk regime shifts when structural changes and capital behavior reinforce each other</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="text-orange-600 font-bold shrink-0">•</span>
+                <span>Receive explainable early-warning signals tied to specific markets and time windows</span>
+              </li>
+            </ul>
           </div>
-
-          <div class="border-2 border-blue-100 rounded-lg p-5 bg-white hover:border-blue-300 transition-colors shadow-sm">
-            <h3 class="font-semibold mb-2 text-blue-900">Escrow & Settlement</h3>
-            <p class="text-gray-600 text-sm">
-              WAP3 provides programmable escrow, rapid verification, and automatic settlement so agents can transact reliably under time pressure — where slow validation means missed edge.
-            </p>
-          </div>
-        </div>
-
-        <div class="mt-6 rounded-lg bg-blue-50 p-5 ring-2 ring-blue-100 border border-blue-200">
-          <p class="text-sm text-gray-700">
-            Over time, the system accumulates a <span class="font-medium text-gray-900">capability score</span> for each system agent (how reliable and useful its outputs are) and a <span class="font-medium text-gray-900">credit profile</span> for each user agent (how it behaves in transactions). This creates a compounding trust and incentive layer for an agent-driven marketplace.
-          </p>
-          <p class="text-xs text-gray-500 mt-3">
-            Note: all outputs are designed as decision support signals and statistical context; they are not guarantees and are not presented as financial advice.
-          </p>
         </div>
       </section>
 
       <!-- How It Works -->
       <section id="how" class="mb-16">
-        <h2 class="text-2xl font-semibold mb-2 text-blue-900">
-          How It Works (High Level)
+        <h2 class="text-2xl font-semibold mb-3 text-blue-900">
+          How It Works
         </h2>
-        <p class="text-gray-600 text-sm mb-6 max-w-3xl">
-          v0.2 focuses on fast, explainable loops: detect → validate → act. In live markets, speed matters because the best edge is often purchased or arbitraged away quickly.
+        <p class="text-gray-700 text-sm mb-6 max-w-3xl leading-relaxed">
+          PredictorIQ uses an agent-native architecture, not as a marketing feature, but because prediction markets demand speed, frequency, and continuity that exceed manual analysis capabilities.
         </p>
+
+        <div class="rounded-lg bg-blue-50 p-6 ring-2 ring-blue-100 border border-blue-200 mb-6">
+          <h3 class="font-semibold text-blue-900 mb-3">Agent Architecture</h3>
+          <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
+            <div>
+              <p class="font-medium text-blue-800 mb-2">System Agents</p>
+              <p class="leading-relaxed">
+                Continuously generate mispricing signals, behavioral analysis, anomaly detection, and risk indicators. These agents operate 24/7 across multiple markets and venues.
+              </p>
+            </div>
+            <div>
+              <p class="font-medium text-blue-800 mb-2">User Agents</p>
+              <p class="leading-relaxed">
+                Represent individual or institutional users. They consume signals, execute decisions, and provide feedback, enabling personalized signal filtering and action workflows.
+              </p>
+            </div>
+          </div>
+          <p class="text-xs text-gray-600 mt-4">
+            This architecture is driven by market constraints (speed, continuity, scale), not marketing positioning. The core product remains signal evaluation and risk insight.
+          </p>
+        </div>
 
         <div class="grid md:grid-cols-4 gap-4">
           <div class="border-2 border-orange-100 rounded-lg p-5 bg-white hover:border-orange-300 transition-colors shadow-sm">
             <div class="text-xs text-orange-600 font-medium mb-2">Step 1</div>
-            <h3 class="font-semibold mb-2 text-blue-900">Scan</h3>
-            <p class="text-gray-600 text-sm">
-              System agents monitor markets across venues and compute candidate signals (mispricing, wallet structure, anomalies, cross-venue gaps).
+            <h3 class="font-semibold mb-2 text-blue-900">Monitor</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">
+              System agents continuously track markets, prices, wallet activity, and structural changes across venues.
             </p>
           </div>
 
           <div class="border-2 border-orange-100 rounded-lg p-5 bg-white hover:border-orange-300 transition-colors shadow-sm">
             <div class="text-xs text-orange-600 font-medium mb-2">Step 2</div>
-            <h3 class="font-semibold mb-2 text-blue-900">Package</h3>
-            <p class="text-gray-600 text-sm">
-              Signals are packaged into auditable "analysis bundles" with provenance: inputs, assumptions, and explainable outputs.
+            <h3 class="font-semibold mb-2 text-blue-900">Evaluate</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Apply option-anchored pricing, wallet analysis, anomaly detection, and cost-adjusted opportunity assessment.
             </p>
           </div>
 
           <div class="border-2 border-orange-100 rounded-lg p-5 bg-white hover:border-orange-300 transition-colors shadow-sm">
             <div class="text-xs text-orange-600 font-medium mb-2">Step 3</div>
-            <h3 class="font-semibold mb-2 text-blue-900">Test</h3>
-            <p class="text-gray-600 text-sm">
-              User agents can quickly validate bundles in a playground using lightweight checks (e.g., sanity tests, sensitivity, venue constraints).
+            <h3 class="font-semibold mb-2 text-blue-900">Signal</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Surface high-quality signals with clear explanations, confidence levels, and supporting evidence.
             </p>
           </div>
 
           <div class="border-2 border-orange-100 rounded-lg p-5 bg-white hover:border-orange-300 transition-colors shadow-sm">
             <div class="text-xs text-orange-600 font-medium mb-2">Step 4</div>
-            <h3 class="font-semibold mb-2 text-blue-900">Trade & Settle</h3>
-            <p class="text-gray-600 text-sm">
-              If accepted, settlement can be handled through normal exchange flows, or, where WAP3 is used, through its escrow and attribution layer so both sides can transact with minimal friction.
+            <h3 class="font-semibold mb-2 text-blue-900">Learn</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Track signal outcomes, refine models, and improve evaluation methods based on real market feedback.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- Who It's For -->
-      <section id="who" class="mb-16">
-        <h2 class="text-2xl font-semibold mb-4 text-blue-900">
-          Who It's For (v0.2)
-        </h2>
-
-        <ul class="list-disc pl-6 text-gray-700">
-          <li>Active prediction market traders who manage multiple concurrent positions</li>
-          <li>Quant-minded researchers who want defensible probability anchors</li>
-          <li>Funds and teams who need explainable signals, not black-box "picks"</li>
-        </ul>
-      </section>
-
-      <!-- Why It Matters -->
+      <!-- Why Prediction Markets -->
       <section id="why" class="mb-16">
-        <h2 class="text-2xl font-semibold mb-4 text-blue-900">
-          Why It Matters
+        <h2 class="text-2xl font-semibold mb-3 text-blue-900">
+          Why Prediction Markets
         </h2>
+        <p class="text-gray-700 text-sm mb-6 max-w-3xl leading-relaxed">
+          Prediction markets are our proving ground, not our final form. They offer a uniquely compressed environment for testing signal quality and system robustness.
+        </p>
 
-        <ul class="list-disc pl-6 text-gray-700">
-          <li>Anchors market probabilities to external, defensible benchmarks when applicable</li>
-          <li>Separates "who's loud" from "who's likely right" via capital structure and wallet quality</li>
-          <li>Surfaces statistically unusual behavior as context under uncertainty</li>
-          <li>Enables cross-venue comparison and potential arbitrage discovery</li>
-          <li>Reduces manual research while keeping decisions explainable and auditable</li>
-        </ul>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="border-2 border-blue-100 rounded-lg p-5 bg-white shadow-sm">
+            <h3 class="font-semibold text-blue-900 mb-2">Time Compression</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Markets resolve quickly (minutes to months), providing rapid feedback loops for signal validation and model refinement.
+            </p>
+          </div>
+
+          <div class="border-2 border-blue-100 rounded-lg p-5 bg-white shadow-sm">
+            <h3 class="font-semibold text-blue-900 mb-2">Information Asymmetry</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Participants have varying information quality, making signal evaluation critical and measurable through market outcomes.
+            </p>
+          </div>
+
+          <div class="border-2 border-blue-100 rounded-lg p-5 bg-white shadow-sm">
+            <h3 class="font-semibold text-blue-900 mb-2">Economic Feedback</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Real capital at stake creates genuine economic incentives, producing verifiable, backtestable data for system improvement.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-6 rounded-lg bg-orange-50 p-5 ring-2 ring-orange-100 border border-orange-200">
+          <p class="text-sm text-gray-800 leading-relaxed">
+            <span class="font-semibold text-orange-900">Long-term vision:</span> The methods we develop for prediction markets (evaluating signal quality under noise, tracking behavioral patterns, detecting structural anomalies) apply to broader decision intelligence problems. Prediction markets are where we prove the system works.
+          </p>
+        </div>
       </section>
 
       <!-- Company Context -->
       <section class="border-t pt-8 text-sm text-gray-600">
-        <p>
-          PredictorIQ is a product developed by GioroX AI. It can optionally integrate with WAP3 — a programmable escrow and settlement layer — to enable agent-to-agent exchange of analysis and execution workflows across prediction markets, but the core analytics product works independently.
+        <p class="leading-relaxed">
+          PredictorIQ is developed by GioroX AI, Inc. We focus on decision intelligence systems that evaluate signal quality in noisy, high-stakes environments. Prediction markets are our current proving ground.
         </p>
       </section>
 
@@ -343,10 +371,10 @@
       <div class="flex flex-col justify-between gap-3 md:flex-row md:items-center">
         <div>© <span id="year"></span> GioroX AI, Inc. All rights reserved.</div>
         <div class="flex flex-wrap gap-4">
-          <a href="https://github.com/nelsonjingusc" target="_blank" rel="noreferrer" class="hover:text-gray-700">
+          <a href="https://github.com/nelsonjingusc" target="_blank" rel="noreferrer" class="hover:text-orange-600 transition-colors">
             GitHub
           </a>
-          <a href="https://www.linkedin.com/in/nanjing/" target="_blank" rel="noreferrer" class="hover:text-gray-700">
+          <a href="https://www.linkedin.com/in/nanjing/" target="_blank" rel="noreferrer" class="hover:text-orange-600 transition-colors">
             LinkedIn
           </a>
           <a href="mailto:nelsonjing@gioroxai.com?subject=PredictorIQ%20-%20Request%20Access" class="hover:text-orange-600 transition-colors">
