@@ -64,6 +64,15 @@
           and settle on-chain — without humans micromanaging every step.
         </p>
 
+        <p class="text-xs leading-relaxed text-slate-300 md:text-sm">
+          The first customer-facing product built on top of WAP3 is
+          <a href="predictoriq.html" class="font-semibold text-orange-400 hover:text-orange-300">
+            PredictorIQ
+          </a>, a decision intelligence and risk awareness layer for prediction markets.
+          WAP3 provides the underlying agent-native payment and provenance infrastructure, while PredictorIQ
+          delivers signal quality evaluation and actionable insights in live market environments.
+        </p>
+
         <ul class="space-y-2 text-sm text-slate-200">
           <li class="flex gap-2">
             <span class="mt-1 h-1.5 w-1.5 rounded-full bg-sky-400"></span>
@@ -205,7 +214,19 @@ agent.intent("write+evaluate+ship")
   </div>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    (function () {
+      // Keep the existing footer year behavior
+      var yearEl = document.getElementById("year");
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+
+      // New behavior: if URL has ?mode=piq, redirect to PredictorIQ page
+      var params = new URLSearchParams(window.location.search);
+      if (params.get("mode") === "piq") {
+        window.location.href = "predictoriq.html";
+      }
+    })();
   </script>
 </body>
 </html>
